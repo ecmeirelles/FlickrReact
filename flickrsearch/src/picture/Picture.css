@@ -24,3 +24,13 @@
 .term:first-letter {
   text-transform: uppercase;
 }
+
+.title {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.searchbar {
+  margin: auto;
+  width: 50%;
+}

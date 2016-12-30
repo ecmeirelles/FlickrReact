@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Search.css'
 
 import Header from '../header/Header';
 import SearchPicture from '../picture/SearchPicture';

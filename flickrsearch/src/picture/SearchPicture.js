@@ -34,7 +34,6 @@ class Picture extends Component {
         axios
           .get(url)
           .then(function(result) {
-            console.log(tag)
             _this.setState({pictures: result.data.photos.photo});
           })
     }
@@ -47,7 +46,7 @@ class Picture extends Component {
   render() {
     return (
       <div className="container picture-content">
-        <input type="text" className="form-control" placeholder="Type a keyword to search"
+        <input type="text" className="form-control title searchbar" placeholder="Search keyword..."
           onKeyPress={this.handleChange} /><br />
         <div className="photos">
         {this.state.pictures.map(function(photo) {
