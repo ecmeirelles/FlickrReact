@@ -16,3 +16,11 @@
   width: 100% !important;
   height: auto !important;
 }
+
+.term {
+  display: inline-block;
+}
+
+.term:first-letter {
+  text-transform: uppercase;
+}
