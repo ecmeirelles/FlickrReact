@@ -1,0 +1,18 @@
+.photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 6;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    6;
+  -moz-column-gap:      0px;
+  column-count:         6;
+  column-gap:           0px;
+
+  margin-bottom: 1em;
+}
+
+.photos img {
+  width: 100% !important;
+  height: auto !important;
+}
