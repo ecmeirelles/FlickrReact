@@ -5,6 +5,10 @@ import './Picture.css';
 
 export default class PicturesContainer extends Component {
 
+  static propTypes = {
+    tag: React.PropTypes.string.isRequired
+  }
+
   constructor(props) {
     super(props)
 
@@ -16,6 +20,10 @@ export default class PicturesContainer extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.tag === this.state.tag) {
+      return
+    }
+
+    if (!nextProps.tag) {
       return
     }
 
